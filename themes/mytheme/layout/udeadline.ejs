@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- partial('partial/head') %>
+    <body>
+        <!-- START PAGE CONTAINER -->
+        <div class="page-container page-navigation-top-fixed">
+
+            <%- partial('partial/sidebar') %>
+
+            <!-- PAGE CONTENT -->
+            <div class="page-content">
+
+                <%- partial('partial/headbar') %>
+
+                <!-- START BREADCRUMB -->
+                <ul class="breadcrumb push-down-0">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Deadline</li>
+                </ul>
+                <!-- END BREADCRUMB -->
+
+                <!-- START CONTENT FRAME -->
+                <div class="content-frame">
+                    <!-- START CONTENT FRAME TOP -->
+                    <div class="content-frame-top">
+                        <div class="page-title">
+                            <h2>Deadline</h2>
+                        </div>
+                        <div class="pull-right">
+                            <button class="btn btn-default content-frame-right-toggle"><span class="fa fa-bars"></span></button>
+                        </div>
+                        <div class="pull-right" style="width: 100px; margin-right: 5px;">
+                            <select class="form-control select">
+                                <option>All</option>
+                                <option>NMLT</option>
+                                <option>NM CNTT 1</option>
+                                <option>AV 1</option>
+                                <option>AV 2</option>
+                            </select>
+                        </div>
+                        <div class="pull-right" style="margin-right: 5px;">Môn: </div>
+                    </div>
+                    <!-- END CONTENT FRAME TOP -->
+
+                    <!-- START CONTENT FRAME BODY -->
+                    <div class="content-frame-body content-frame-body-left">
+
+                        <div class="row push-up-10">
+                            <div class="tasks" id="tasks">
+                                <div class="task-item task-primary">
+                                    <div class="task-footer">
+                                        <div class="pull-left"><span class="fa fa-clock-o"></span> 15 giờ 34 phút - Nhập môn lập trình</div>
+                                        <div class="pull-right"><a href="https://courses.fit.hcmus.edu.vn/mod/assign/view.php?id=34755"><span class="fa fa-chain"></span></a></div>
+                                    </div>
+                                    <div class="task-text">
+                                        <h3>Nộp bài tập lý thuyết tuần 3...</h3>
+                                        * Nội dung: bài tập 4.2, 4.4c, 4.4d và 4.5 trong slides 4.<br/>
+                                        <br/>
+                                        * Quy định:<br/>
+                                        - Bài tập lý thuyết thực hiện cá nhân.<br/>
+                                        - Bài nộp chỉ bao gồm các files mã nguồn (.h, .cpp, .c), xóa đi các thư mục và tập tin không cần thiết như: Debug, Release, ...<br/>
+                                        - Bài nộp nén thành 1 file duy nhất đặt tên BT&lt;STT tuần&gt;-&lt;MSSV&gt;.zip, ví dụ: sinh viên 1612001 sẽ nộp bài tập lý thuyết tuần 1 với tên file là BT1-1612001.zip.<br/>
+                                        - Các trường hợp giống bài nhau sẽ bị 0 điểm tất cả.<br/>
+                                        - Các trường hợp nộp bài trễ được thực hiện qua email cho giáo viên và sẽ bị trừ 1/2 số điểm.<br/>
+                                        - Hạn cuối: 23h55, thứ hai, ngày 14/11/2016.<br/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>Đã quá hạn</h3>
+
+                            <div class="tasks" id="tasks_completed">
+                                <div class="task-item task-danger task-complete">
+                                    <div class="task-footer">
+                                        <div class="pull-left"><span class="fa fa-clock-o"></span> 15 giờ 34 phút - Nhập môn lập trình</div>
+                                        <div class="pull-right"><a href="https://courses.fit.hcmus.edu.vn/mod/assign/view.php?id=34755"><span class="fa fa-chain"></span></a></div>
+                                    </div>
+                                    <div class="task-text">
+                                        <h3>Nộp bài tập lý thuyết tuần 3...</h3>
+                                        * Nội dung: bài tập 4.2, 4.4c, 4.4d và 4.5 trong slides 4.<br/>
+                                        <br/>
+                                        * Quy định:<br/>
+                                        - Bài tập lý thuyết thực hiện cá nhân.<br/>
+                                        - Bài nộp chỉ bao gồm các files mã nguồn (.h, .cpp, .c), xóa đi các thư mục và tập tin không cần thiết như: Debug, Release, ...<br/>
+                                        - Bài nộp nén thành 1 file duy nhất đặt tên BT&lt;STT tuần&gt;-&lt;MSSV&gt;.zip, ví dụ: sinh viên 1612001 sẽ nộp bài tập lý thuyết tuần 1 với tên file là BT1-1612001.zip.<br/>
+                                        - Các trường hợp giống bài nhau sẽ bị 0 điểm tất cả.<br/>
+                                        - Các trường hợp nộp bài trễ được thực hiện qua email cho giáo viên và sẽ bị trừ 1/2 số điểm.<br/>
+                                        - Hạn cuối: 23h55, thứ hai, ngày 14/11/2016.<br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CONTENT FRAME BODY -->
+
+                </div>
+                <!-- END CONTENT FRAME -->
+
+            </div>
+            <!-- END PAGE CONTENT -->
+        </div>
+        <!-- END PAGE CONTAINER -->
+        <%- partial('partial/scripts') %>
+    </body>
+</html>
